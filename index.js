@@ -84,9 +84,6 @@ heavyTruck.trip();
 lightTruck.trip();
 
 
-// ==========================================
-// Частина 2 (1.2.11 - 1.2.24): ООП з використанням класів ES6
-// ==========================================
 
 // 1.2.12 - 1.2.15: Клас Square
 class Square {
@@ -95,7 +92,7 @@ class Square {
     }
 
     static help() {
-        console.log("Квадрат: правильний чотирикутник, у якого всі 4 сторони рівні, а всі кути дорівнюють 90°.");
+        console.log;
     }
 
     length() {
@@ -119,7 +116,6 @@ class Square {
     }
 }
 
-// 1.2.16 - 1.2.17: Клас Rectangle (Паралелограм НЕ створюватиметься від нього, тому тут задаємо getter/setter)
 class Rectangle extends Square {
     constructor(a, b) {
         super(a);
@@ -134,7 +130,7 @@ class Rectangle extends Square {
     set b(val) { this._b = val; }
 
     static help() {
-        console.log("Прямокутник: чотирикутник із чотирма прямими кутами (90°) та рівними протилежними сторонами.");
+        console.log;
     }
 
     length() {
@@ -167,7 +163,7 @@ class Rhombus extends Square {
     }
 
     static help() {
-        console.log("Ромб: паралелограм, у якого всі сторони мають однакову довжину.");
+        console.log;
     }
 
     length() {
@@ -192,7 +188,6 @@ class Rhombus extends Square {
     }
 }
 
-// 1.2.20 - 1.2.21: Клас Parallelogram (успадковано від Rhombus)
 class Parallelogram extends Rhombus {
     constructor(a, b, alpha, beta) {
         super(a, alpha, beta);
@@ -200,7 +195,7 @@ class Parallelogram extends Rhombus {
     }
 
     static help() {
-        console.log("Паралелограм: чотирикутник, протилежні сторони якого є паралельними та рівними.");
+        console.log;
     }
 
     length() {
@@ -243,9 +238,6 @@ myRhombus.info();
 myParallelogram.info();
 
 
-// ==========================================
-// Частина 3 (1.2.25 - 1.2.31): Функції, деструктуризація та замикання
-// ==========================================
 
 // 1.2.25 - 1.2.26: Функція Triangular із деструктуризацією
 function Triangular(props = {}) {
@@ -272,7 +264,6 @@ console.log("2 * π =", doublePi());
 console.log("(2/3) * π =", twoThirdsPi());
 console.log("π / 2 =", halfPi());
 
-// 1.2.29 - 1.2.31: Функція-фабрика Painter та фарбування об'єктів
 function Painter(color) {
     return function(targetObj) {
         if (targetObj && targetObj.hasOwnProperty("type")) {
